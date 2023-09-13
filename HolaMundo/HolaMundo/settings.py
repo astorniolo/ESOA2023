@@ -54,7 +54,7 @@ ROOT_URLCONF = 'HolaMundo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/acspr/OneDrive/ESOA/ESOA2023/TAP/U6/Django/HolaMundo/HolaMundo/Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

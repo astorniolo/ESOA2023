@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% include "header.html"%}
+    <h1>Saludos desde mi primer pagina web</h1>
+    <h2> subtitulo de la pagina</h2>
+    <p> ahora veremos una lista de tareas</p>
+    <ul>
+        <li>Ir a la Esoa</li>
+        <li>Buscar un aula</li>
+        <li>revisar si hay internet</li>
+        <li>revisar si tiene proyector</li>
+    </ul>
+    <h3>Datos de la Profesora</h3>
+    <ol>
+        <li>Nombre : {{nombre_profe}}</li>
+        <li>Edad :  {{edad_profe}}</li>
+        <li>Signo : {{signo_profe}}</li>
+    </ol>
+    <h4>Materias de la profe</h4>
+    <ul>
+        {% if materias %}
+            {% for materia in materias_profe %}
+                <li>{{materia}}</li>
+            {% endfor %}
+        {% else %}
+            <p>no hay materias</p>
+        {% endif %}
+    </ul>
+    {% include "footer.html"%}
+</body>
+</html>
