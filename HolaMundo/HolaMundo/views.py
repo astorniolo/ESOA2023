@@ -40,9 +40,10 @@ def saludo2View(request):
     documento_HTML=open("C:/Users/acspr/OneDrive/ESOA/ESOA2023/TAP/U6/Django/HolaMundo/HolaMundo/Templates/saludo2.html")
     template=Template(documento_HTML.read())
     documento_HTML.close()
+    
     ctx=Context()
     return HttpResponse( template.render(ctx))
-    
+
     
 def saludo3View(request):
     nombre="Andrea"
